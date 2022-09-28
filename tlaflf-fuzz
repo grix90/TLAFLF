@@ -1,0 +1,12 @@
+#!/bin/sh
+
+while getopts i:o:f: flag
+do
+    case "${flag}" in
+        i) input_dir=${OPTARG};;
+        o) output_dir=${OPTARG};;
+        p) program_name=${OPTARG};;
+    esac
+done
+export AFL_SKIP_BIN_CHECK=1
+afl-fuzz -i $input_dir -o output_dir -T $program_name -- wine $program_name
