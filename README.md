@@ -10,3 +10,12 @@ And in this case, wine is **WINE** and WINE is not an emulator.
 **In combination with WSL, WINE allows you to run AFL for Linux with Windows programs.**  
   
 Of course, **fuzzing in this way will be unsuccessful**, but what can you do if there is one night left before the fateful reception?  
+
+#Building
+  chmod +x install-dependencies.sh
+  chmod +x tlaflf-fuzz
+  ./install-dependencies.sh
+  make
+  
+#Running
+  tlaflf-fuzz -i fuzzer_input -o fuzzer_output -p program_to_fuzz.exe
