@@ -1,4 +1,4 @@
 #!/bin/sh
 
-apt install make gcc g++ wine
-dpkg --add-architecture i386 && apt-get update && apt-get install wine32
+apt install -y make gcc g++ wine
+dpkg --add-architecture i386 && apt-get update && apt-get -y install wine32
