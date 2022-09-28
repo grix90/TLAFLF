@@ -1,5 +1,7 @@
 # TLAFLF - Totally Legit AFL Fork
 
+## Intro
+
 Hello!  
 Are you tired of compiling things like **WINAFL** just to pass a lab?  
 Tired of figuring out why dynamic instrumentation doesn't work on Windows with Windows Defender turned on (and off)?  
@@ -11,11 +13,11 @@ And in this case, wine is **WINE** and WINE is not an emulator.
   
 Of course, **fuzzing in this way will be unsuccessful**, but what can you do if there is one night left before the fateful reception?  
 
-#Building
+## Building
   chmod +x install-dependencies.sh
   chmod +x tlaflf-fuzz
   ./install-dependencies.sh
   make
   
-#Running
+## Running
   tlaflf-fuzz -i fuzzer_input -o fuzzer_output -p program_to_fuzz.exe
