@@ -22,4 +22,4 @@ Of course, **fuzzing in this way will be unsuccessful**, but what can you do if 
   make  
     
 ## Running
-  tlaflf-fuzz -i fuzzer_input -o fuzzer_output -p program_to_fuzz.exe
+  ./tlaflf-fuzz -i fuzzer_input -o fuzzer_output -p program_to_fuzz.exe
