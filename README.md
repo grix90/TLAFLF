@@ -18,7 +18,7 @@ Of course, **fuzzing in this way will be unsuccessful**, but what can you do if 
   cd TLAFLF  
   chmod +x install-dependencies.sh  
   chmod +x tlaflf-fuzz  
-  ./install-dependencies.sh  
+  sudo ./install-dependencies.sh  
   make  
     
 ## Running
