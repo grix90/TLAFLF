@@ -15,7 +15,7 @@ Of course, **fuzzing in this way will be unsuccessful**, but what can you do if 
 
 ## Building
   git clone https://github.com/grix90/TLAFLF.git  
-  cd TFLAFLF  
+  cd TLAFLF  
   chmod +x install-dependencies.sh  
   chmod +x tlaflf-fuzz  
   ./install-dependencies.sh  
