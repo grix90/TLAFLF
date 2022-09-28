@@ -1,6 +1,6 @@
 #!/bin/sh
 
-while getopts i:o:f: flag
+while getopts i:o:p: flag
 do
     case "${flag}" in
         i) input_dir=${OPTARG};;
