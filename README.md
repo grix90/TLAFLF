@@ -14,6 +14,8 @@ And in this case, wine is **WINE** and WINE is not an emulator.
 Of course, **fuzzing in this way will be unsuccessful**, but what can you do if there is one night left before the fateful reception?  
 
 ## Building
+  git clone https://github.com/grix90/TLAFLF.git  
+  cd TFLAFLF
   chmod +x install-dependencies.sh  
   chmod +x tlaflf-fuzz  
   ./install-dependencies.sh  
