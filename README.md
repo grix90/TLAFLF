@@ -12,7 +12,7 @@ And in this case, wine is **WINE** and WINE is not an emulator.
 **In combination with WSL, WINE allows you to run AFL for Linux with Windows programs.**  
 
 ## Building
-  git clone https://github.com/grix90/TLAFLF.git  
+  git clone https://github.com/StupidSimpleThings/TLAFLF.git  
   cd TLAFLF  
   chmod +x install-dependencies.sh  
   chmod +x tlaflf-fuzz  
