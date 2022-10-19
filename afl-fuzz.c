@@ -6960,8 +6960,10 @@ EXP_ST void check_binary(u8* fname) {
 
 #ifndef __APPLE__
 
-  if (f_data[0] != 0x7f || memcmp(f_data + 1, "ELF", 3))
-    FATAL("Program '%s' is not an ELF binary", target_path);
+  //if (f_data[0] != 0x7f || memcmp(f_data + 1, "ELF", 3))
+    //FATAL("Program '%s' is not an ELF binary", target_path);
+  if (f_data[128] != 0x50 || f_data[129] != 0x45)
+	  FATAL("Program '%s' is  not an PE binary ", target_path);
 
 #else
 
