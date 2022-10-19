@@ -20,4 +20,5 @@ And in this case, wine is **WINE** and WINE is not an emulator.
   make  
     
 ## Running
-  ./tlaflf-fuzz -i fuzzer_input -o fuzzer_output -p program_to_fuzz.exe
+  Now you can run it just like normal AFL. If u are beginner, here is the command for running normal afl:
+  ./afl-fuzz -i fuzzer-input/ -o fuzzer-output/ -n -f ./fuzzed_data_subst_input ./program_to_fuzz.exe
